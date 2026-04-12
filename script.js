@@ -192,7 +192,7 @@ function initScrollReveal() {
 ================================================================ */
 
 // URL del backend en Render — actualizar cuando esté desplegado
-const BACKEND_URL = 'https://portafolio-fac-backend.onrender.com';
+const BACKEND_URL = 'https://portafolio-backend-7hjg.onrender.com';
 
 function initContactForm() {
   const form       = document.getElementById('contactForm');
