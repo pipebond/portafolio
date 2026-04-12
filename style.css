@@ -754,6 +754,16 @@ body.cursor-hover .cursor-follower {
   position: relative;
 }
 
+.about-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
 .about-image-placeholder {
   aspect-ratio: 4/5;
   background: var(--bg-card);
