@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portafolio profesional de desarrollador y diseñador web freelance en Colombia. Diseño web premium para empresas." />
+  <meta name="author" content="Felipe Andrade Carvajal" />
+  <title>Felipe Andrade Carvajal — Desarrollador Web & Mobile Multiplataforma</title>
+
+  <!-- =============================================
+       FUENTES GOOGLE
+       Playfair Display → títulos serif elegantes
+       Inter           → cuerpo limpio y legible
+  ============================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- =============================================
+       ICONOS — Lucide (CDN, sin dependencias)
+  ============================================= -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       CURSOR PERSONALIZADO
+  ============================================================ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <!-- Logo / Marca personal -->
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>FAC<span class="logo-bracket">]</span>
+      </a>
+
+      <!-- Navegación desktop -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#services" class="nav-link">Servicios</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#pricing" class="nav-link">Precios</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Hablemos</a></li>
+      </ul>
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO
+       Sección principal con nombre, especialidad y CTA
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Fondo animado con partículas / ruido -->
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Etiqueta de disponibilidad -->
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+
+      <!-- Nombre principal -->
+      <h1 class="hero-title reveal-up delay-1">
+        Diseño web que<br />
+        <em>convierte visitantes</em><br />
+        en clientes.
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="hero-subtitle reveal-up delay-2">
+        Soy <strong>Felipe Andrade Carvajal</strong>, desarrollador web &amp; mobile
+        multiplataforma freelance en Colombia. Creo soluciones digitales completas
+        — web, backend y apps móviles — para empresas que quieren crecer.
+      </p>
+
+      <!-- Botones de acción -->
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-ghost">Iniciar proyecto →</a>
+      </div>
+
+      <!-- Métricas rápidas -->
+      <div class="hero-stats reveal-up delay-4">
+        <div class="stat">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">Proyectos entregados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Clientes satisfechos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE MÍ
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <div class="about-grid">
+        <!-- Imagen / tarjeta visual -->
+        <div class="about-visual reveal-left">
+          <div class="about-image-wrapper">
+            <!-- Reemplaza este div con tu <img> cuando tengas foto -->
+            <div class="about-image-placeholder">
+              <div class="placeholder-initials">FAC</div>
+            </div>
+            <!-- Tarjeta flotante de tecnología -->
+            <div class="about-float-card">
+              <i data-lucide="code-2"></i>
+              <div>
+                <strong>Stack completo</strong>
+                <span>React · Node.js · MySQL · Flutter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="about-text reveal-right">
+          <div class="section-label">Sobre mí</div>
+          <h2 class="section-title">
+            Código limpio,<br /><em>diseño que impacta.</em>
+          </h2>
+          <p class="about-description">
+            Soy técnico en Análisis y Desarrollo de Software especializado en
+            desarrollo web y mobile multiplataforma. Construyo soluciones digitales
+            completas: desde el diseño de la interfaz hasta el backend y la base
+            de datos, en web y en dispositivos móviles con Flutter.
+          </p>
+          <p class="about-description">
+            Trabajo con tecnologías como React, Node.js, Express y MySQL para el
+            desarrollo web, y Flutter para apps móviles que corren en Android e iOS
+            desde un solo código base — entregando productos rápidos, escalables y
+            con una experiencia de usuario cuidada.
+          </p>
+
+          <!-- Skills -->
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i data-lucide="layout"></i>
+              <span>Diseño UI/UX</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="code"></i>
+              <span>Desarrollo Front-end</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="smartphone"></i>
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="zap"></i>
+              <span>Performance Web</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="server"></i>
+              <span>Node.js &amp; Express</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="pen-tool"></i>
+              <span>UX / IX Research</span>
+            </div>
+            <div class="skill-item">
+              <i data-lucide="layers"></i>
+              <span>Flutter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICIOS
+  ============================================================ -->
+  <section class="services section" id="services">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <div class="section-label">Servicios</div>
+        <h2 class="section-title">Lo que construyo<br /><em>para tu negocio</em></h2>
+        <p class="section-subtitle">
+          Cada proyecto es único. Ofrezco soluciones digitales pensadas
+          estratégicamente para cumplir tus objetivos de negocio.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Servicio 1 — Diseño Web -->
+        <div class="service-card reveal-up delay-1">
+          <div class="service-icon">
+            <i data-lucide="monitor"></i>
+          </div>
+          <h3 class="service-title">Diseño Web Premium</h3>
+          <p class="service-desc">
+            Sitios web corporativos que generan confianza desde el primer clic.
+            Diseño exclusivo, sin plantillas genéricas — tu marca merece ser única.
+          </p>
+          <ul class="service-features">
+            <li><i data-lucide="check"></i> Diseño personalizado</li>
+            <li><i data-lucide="check"></i> Animaciones suaves</li>
+            <li><i data-lucide="check"></i> SEO on-page básico</li>
+          </ul>
+        </div>
+
+        <!-- Servicio 2 — Landing Pages -->
+        <div class="service-card service-card--featured reveal-up delay-2">
+          <div class="service-badge">Popular</div>
+          <div class="service-icon">
+            <i data-lucide="target"></i>
+          </div>
+          <h3 class="service-title">Landing Pages</h3>
+          <p class="service-desc">
+            Páginas de aterrizaje optimizadas para convertir. Cada elemento
+            está diseñado con un único propósito: transformar tu tráfico en ventas.
+          </p>
+          <ul class="service-features">
+            <li><i data-lucide="check"></i> Estructura de alta conversión</li>
+            <li><i data-lucide="check"></i> Integración con CRM / Email</li>
+            <li><i data-lucide="check"></i> A/B testing listo</li>
+          </ul>
+        </div>
+
+        <!-- Servicio 3 — Soluciones a Medida -->
+        <div class="service-card reveal-up delay-3">
+          <div class="service-icon">
+            <i data-lucide="settings-2"></i>
+          </div>
+          <h3 class="service-title">Soluciones a Medida</h3>
+          <p class="service-desc">
+            ¿Tienes una necesidad específica? Desarrollo funcionalidades personalizadas:
+            dashboards, formularios complejos, integraciones con APIs y más.
+          </p>
+          <ul class="service-features">
+            <li><i data-lucide="check"></i> Análisis de requerimientos</li>
+            <li><i data-lucide="check"></i> Desarrollo escalable</li>
+            <li><i data-lucide="check"></i> Soporte post-entrega</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYECTOS
+  ============================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <div class="section-label">Proyectos</div>
+        <h2 class="section-title">Trabajo que<br /><em>habla por sí solo</em></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Proyecto 1 -->
+        <article class="project-card reveal-up delay-1">
+          <div class="project-image">
+            <img src="logo_avicontrol.svg" alt="Avicontrol" class="project-img-logo" />
+            <div class="project-overlay">
+              <a href="https://app-web-pollos-de-engorde-git-main-pipebonds-projects.vercel.app/" class="project-link"
+                aria-label="Ver proyecto" target="_blank" rel="noopener">
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Web + Android</span>
+              <span class="tag">Agro / IA</span>
+            </div>
+            <h3 class="project-title">Avicontrol</h3>
+            <p class="project-desc">
+              Plataforma multiplataforma de gestión avícola con inteligencia artificial.
+              Seguimiento de camadas, reportes PDF automáticos, sincronización en la nube
+              y app Android para productores de pollos de engorde.
+            </p>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card reveal-up delay-2">
+          <div class="project-image">
+            <img src="flowfiles_logo.svg" alt="FlowFiles" class="project-img-logo" />
+            <div class="project-overlay">
+              <a href="https://flowfiles-lac.vercel.app/" class="project-link" aria-label="Ver proyecto" target="_blank"
+                rel="noopener">
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Productividad</span>
+            </div>
+            <h3 class="project-title">FlowFiles</h3>
+            <p class="project-desc">
+              Plataforma web de herramientas gratuitas para trabajar con archivos PDF
+              e imágenes online. Rápido, sin instalación y accesible desde cualquier dispositivo.
+            </p>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 
+        <article class="project-card reveal-up delay-3">
+          <div class="project-image">
+            <div class="project-img-placeholder project-img-3">
+              <span>NovaTech</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Ver proyecto">
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">SaaS</span>
+            </div>
+            <h3 class="project-title">NovaTech Dashboard</h3>
+            <p class="project-desc">
+              Dashboard administrativo para startup SaaS de Cali. Panel con
+              métricas en tiempo real, gestión de usuarios y reportes exportables.
+            </p>
+          </div>
+        </article>-->
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRECIOS
+  ============================================================ -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <div class="section-label">Precios</div>
+        <h2 class="section-title">Inversión clara,<br /><em>resultados reales</em></h2>
+        <p class="section-subtitle">
+          Sin costos ocultos. Elige el plan que mejor se adapte a tus necesidades.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Plan Esencial -->
+        <div class="pricing-card reveal-up delay-1">
+          <div class="pricing-header">
+            <h3 class="plan-name">Esencial</h3>
+            <div class="plan-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">800</span>
+              <span class="price-period">USD</span>
+            </div>
+            <p class="plan-desc">Ideal para negocios que dan sus primeros pasos online.</p>
+          </div>
+          <ul class="plan-features">
+            <li><i data-lucide="check-circle"></i> Landing page (1 página)</li>
+            <li><i data-lucide="check-circle"></i> Diseño responsive</li>
+            <li><i data-lucide="check-circle"></i> Formulario de contacto</li>
+            <li><i data-lucide="check-circle"></i> Optimización SEO básica</li>
+            <li><i data-lucide="check-circle"></i> Entrega en 7 días</li>
+            <li class="feature-disabled"><i data-lucide="x-circle"></i> Integraciones externas</li>
+            <li class="feature-disabled"><i data-lucide="x-circle"></i> Mantenimiento mensual</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-full">Empezar ahora</a>
+        </div>
+
+        <!-- Plan Profesional (destacado) -->
+        <div class="pricing-card pricing-card--featured reveal-up delay-2">
+          <div class="pricing-badge">Más popular</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">Profesional</h3>
+            <div class="plan-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">1.800</span>
+              <span class="price-period">USD</span>
+            </div>
+            <p class="plan-desc">Para empresas que necesitan una presencia digital sólida.</p>
+          </div>
+          <ul class="plan-features">
+            <li><i data-lucide="check-circle"></i> Sitio web (hasta 5 páginas)</li>
+            <li><i data-lucide="check-circle"></i> Diseño UI/UX personalizado</li>
+            <li><i data-lucide="check-circle"></i> Animaciones &amp; microinteracciones</li>
+            <li><i data-lucide="check-circle"></i> SEO on-page completo</li>
+            <li><i data-lucide="check-circle"></i> Integración Google Analytics</li>
+            <li><i data-lucide="check-circle"></i> 1 mes de soporte gratuito</li>
+            <li class="feature-disabled"><i data-lucide="x-circle"></i> Backend / base de datos</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary-full">Empezar ahora</a>
+        </div>
+
+        <!-- Plan Premium -->
+        <div class="pricing-card reveal-up delay-3">
+          <div class="pricing-header">
+            <h3 class="plan-name">Premium</h3>
+            <div class="plan-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">3.500</span>
+              <span class="price-period">USD</span>
+            </div>
+            <p class="plan-desc">Solución completa para negocios con necesidades avanzadas.</p>
+          </div>
+          <ul class="plan-features">
+            <li><i data-lucide="check-circle"></i> Sitio web completo (sin límite)</li>
+            <li><i data-lucide="check-circle"></i> Desarrollo a medida</li>
+            <li><i data-lucide="check-circle"></i> Backend + base de datos</li>
+            <li><i data-lucide="check-circle"></i> Integraciones con APIs</li>
+            <li><i data-lucide="check-circle"></i> Panel de administración</li>
+            <li><i data-lucide="check-circle"></i> 3 meses de soporte</li>
+            <li><i data-lucide="check-circle"></i> Mantenimiento mensual</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-full">Empezar ahora</a>
+        </div>
+
+      </div>
+
+      <!-- Nota de cotización personalizada -->
+      <p class="pricing-note reveal-up">
+        ¿Proyecto fuera de estos rangos?
+        <a href="#contact">Cuéntame tu idea →</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <!-- Información de contacto -->
+        <div class="contact-info reveal-left">
+          <div class="section-label">Contacto</div>
+          <h2 class="section-title">
+            Hablemos de<br /><em>tu proyecto</em>
+          </h2>
+          <p class="contact-desc">
+            ¿Tienes una idea, un negocio que lanzar o una web que mejorar?
+            Cuéntame. Respondo en menos de 24 horas.
+          </p>
+
+          <!-- Datos de contacto -->
+          <div class="contact-details">
+            <a href="mailto:felipeandradecarvajal@gmail.com" class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>felipeandradecarvajal@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/573022897865" class="contact-item" target="_blank" rel="noopener">
+              <div class="contact-icon"><i data-lucide="message-circle"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+57 302 289 7865</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <strong>Ubicación</strong>
+                <span>Colombia — trabajo remoto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contact-form-wrapper reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nombre *</label>
+                <input type="text" id="name" name="name" placeholder="Juan García" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="juan@empresa.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Servicio de interés</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Selecciona un servicio</option>
+                <option value="landing">Landing Page</option>
+                <option value="website">Sitio Web Corporativo</option>
+                <option value="webapp">Solución a Medida</option>
+                <option value="other">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Presupuesto estimado</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Rango de presupuesto</option>
+                <option value="800-1000">$800 – $1.000 USD</option>
+                <option value="1000-2000">$1.000 – $2.000 USD</option>
+                <option value="2000-4000">$2.000 – $4.000 USD</option>
+                <option value="4000+">$4.000+ USD</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Cuéntame sobre tu proyecto *</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="¿Qué necesitas? ¿Cuál es el objetivo del sitio? ¿Tienes referencias de estilo?"
+                required></textarea>
+            </div>
+
+            <!-- Botón enviar -->
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span class="btn-text">Enviar mensaje</span>
+              <span class="btn-loading" hidden>Enviando...</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+
+            <!-- Mensaje de éxito -->
+            <div class="form-success" id="formSuccess" hidden>
+              <i data-lucide="check-circle"></i>
+              <strong>¡Mensaje enviado!</strong>
+              <p>Te respondo en menos de 24 horas.</p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">[</span>FAC<span class="logo-bracket">]</span>
+          </a>
+          <p class="footer-tagline">
+            Diseño web premium<br />para negocios que quieren crecer.
+          </p>
+          <!-- Redes sociales -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/felipe-a783a2168" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M6.94 8.5A2.44 2.44 0 1 1 6.94 3.62 2.44 2.44 0 0 1 6.94 8.5ZM4.7 20.4h4.5V9.98H4.7V20.4ZM12.1 9.98h4.31v1.42h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9v7.44h-4.5v-6.6c0-1.57-.03-3.58-2.18-3.58-2.18 0-2.52 1.7-2.52 3.46v6.72h-4.5V9.98Z" />
+              </svg>
+            </a>
+            <a href="https://github.com/peterete" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.43 7.89 10.96.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.53-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.18a10.8 10.8 0 0 1 5.72 0c2.18-1.49 3.14-1.18 3.14-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.83 1.18 3.08 0 4.41-2.68 5.37-5.24 5.66.41.35.77 1.04.77 2.1 0 1.52-.01 2.74-.01 3.11 0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/felipeandradecarvajal" target="_blank" rel="noopener"
+              aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.9 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/573022897865" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navegación footer -->
+        <div class="footer-nav">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#pricing">Precios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Servicios footer -->
+        <div class="footer-nav">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#services">Diseño Web Premium</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Soluciones a Medida</a></li>
+            <li><a href="#pricing">Ver precios</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Línea inferior -->
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Felipe Andrade Carvajal — Todos los derechos reservados.</p>
+        <p>Hecho con <span class="heart">♥</span> desde Colombia</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÓN VOLVER ARRIBA
+  ============================================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- JavaScript principal -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D4037"/>
+      <stop offset="100%" style="stop-color:#8B4513"/>
+    </linearGradient>
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D7A96B"/>
+      <stop offset="100%" style="stop-color:#B5793A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo circular marrón -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGrad)"/>
+
+  <!-- Texto AVICONTROL siguiendo la circunferencia superior -->
+  <path id="topArc" d="M 22,100 A 78,78 0 0,1 178,100" fill="none"/>
+  <text font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#FFE082" letter-spacing="3">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">AVICONTROL</textPath>
+  </text>
+
+  <!-- Tabla/clipboard - cuerpo -->
+  <rect x="62" y="55" width="76" height="95" rx="5" ry="5" fill="url(#boardGrad)" stroke="#7B4F1E" stroke-width="2"/>
+  <!-- Líneas de la tabla -->
+  <line x1="72" y1="78" x2="128" y2="78" stroke="#7B4F1E" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="72" y1="91" x2="128" y2="91" stroke="#7B4F1E" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="72" y1="104" x2="128" y2="104" stroke="#7B4F1E" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="72" y1="117" x2="110" y2="117" stroke="#7B4F1E" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Gancho metálico superior -->
+  <rect x="88" y="49" width="24" height="12" rx="4" fill="#BDBDBD" stroke="#9E9E9E" stroke-width="1.5"/>
+  <rect x="93" y="44" width="14" height="10" rx="5" fill="none" stroke="#9E9E9E" stroke-width="2.5"/>
+
+  <!-- Pollo pequeño encima del clipboard -->
+  <!-- Cuerpo -->
+  <ellipse cx="100" cy="102" rx="16" ry="13" fill="#FFF8E1"/>
+  <!-- Cabeza -->
+  <circle cx="100" cy="80" r="12" fill="#FFF8E1"/>
+  <!-- Cresta -->
+  <ellipse cx="100" cy="69" rx="4" ry="5" fill="#E53935"/>
+  <ellipse cx="107" cy="71" rx="3" ry="4" fill="#E53935"/>
+  <ellipse cx="93" cy="71" rx="3" ry="4" fill="#E53935"/>
+  <!-- Ojo -->
+  <circle cx="105" cy="79" r="2.5" fill="#333"/>
+  <circle cx="106" cy="78" r="1" fill="white"/>
+  <!-- Pico -->
+  <polygon points="110,83 118,80 110,87" fill="#FFB300"/>
+  <!-- Barbilla -->
+  <ellipse cx="112" cy="88" rx="3.5" ry="2.5" fill="#E53935"/>
+  <!-- Alas -->
+  <ellipse cx="83" cy="101" rx="10" ry="7" fill="#FFCC80" transform="rotate(-15 83 101)"/>
+  <ellipse cx="117" cy="101" rx="10" ry="7" fill="#FFCC80" transform="rotate(15 117 101)"/>
+  <!-- Patas -->
+  <rect x="94" y="113" width="4" height="8" rx="2" fill="#FFB300"/>
+  <rect x="102" y="113" width="4" height="8" rx="2" fill="#FFB300"/>
+  <!-- Pies -->
+  <line x1="92" y1="121" x2="88" y2="124" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <line x1="96" y1="121" x2="96" y2="125" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <line x1="100" y1="121" x2="103" y2="124" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <line x1="104" y1="121" x2="101" y2="124" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+  <line x1="108" y1="121" x2="112" y2="124" stroke="#FFB300" stroke-width="2" stroke-linecap="round"/>
+</svg>
